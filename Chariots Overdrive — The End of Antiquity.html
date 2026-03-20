@@ -1,0 +1,930 @@
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chariots Overdrive — The End of Antiquity</title>
+  <meta name="description" content="Fantasy, heavy metal and the end of antiquity — the debut album from Chariots Overdrive. Out April 3, 2026 on Gates of Hell Records.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chariots Overdrive — The End of Antiquity">
+  <meta property="og:description" content="NWOBHM · USPM · Atlanta, GA · Debut LP out April 3, 2026">
+  <meta property="og:type" content="music.album">
+  <meta property="og:url" content="https://chariotsoverdrive.bandcamp.com/album/the-end-of-antiquity">
+
+  <!-- Fonts: Cinzel (display, carved-stone Roman) + Rajdhani (body, angular metal) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── DESIGN TOKENS ── */
+    :root {
+      --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.875rem);
+      --text-sm:   clamp(0.875rem, 0.8rem  + 0.35vw, 1rem);
+      --text-base: clamp(1rem,     0.95rem + 0.25vw, 1.125rem);
+      --text-lg:   clamp(1.125rem, 1rem    + 0.75vw, 1.5rem);
+      --text-xl:   clamp(1.5rem,   1.2rem  + 1.25vw, 2.25rem);
+      --text-2xl:  clamp(2rem,     1.2rem  + 2.5vw,  3.5rem);
+      --text-3xl:  clamp(2.5rem,   1rem    + 4vw,    5rem);
+
+      --space-1:  0.25rem;
+      --space-2:  0.5rem;
+      --space-3:  0.75rem;
+      --space-4:  1rem;
+      --space-5:  1.25rem;
+      --space-6:  1.5rem;
+      --space-8:  2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+
+      --radius-sm: 0.25rem;
+      --radius-md: 0.375rem;
+      --radius-lg: 0.5rem;
+      --radius-full: 9999px;
+
+      --transition: 200ms cubic-bezier(0.16, 1, 0.3, 1);
+
+      --font-display: 'Cinzel', 'Times New Roman', serif;
+      --font-body:    'Rajdhani', 'Arial', sans-serif;
+    }
+
+    /* ── CUSTOM PALETTE: Forge Iron / Blood Gold ── */
+    /* Dark — iron, aged metal, ember glow */
+    :root, [data-theme="dark"] {
+      --color-bg:              #0d0c0b;
+      --color-surface:         #131210;
+      --color-surface-2:       #181614;
+      --color-surface-offset:  #1e1b18;
+      --color-border:          #2e2a25;
+      --color-divider:         #252220;
+      --color-text:            #e8e0d4;
+      --color-text-muted:      #8a8070;
+      --color-text-faint:      #4a4540;
+      --color-accent:          #c9850a;   /* ember gold */
+      --color-accent-hover:    #e8990c;
+      --color-accent-bright:   #f0b030;
+      --color-accent-dim:      #5c3a08;
+      --color-blood:           #8b1a1a;   /* deep crimson accent */
+      --color-iron:            #3a3530;
+
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.5);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.6);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.8);
+      --glow-gold: 0 0 20px rgba(201,133,10,0.25), 0 0 60px rgba(201,133,10,0.1);
+    }
+
+    /* Light mode (minimal — linktrees are typically dark) */
+    [data-theme="light"] {
+      --color-bg:              #f2ede6;
+      --color-surface:         #f8f4ee;
+      --color-surface-2:       #faf7f3;
+      --color-surface-offset:  #ece5db;
+      --color-border:          #ccc0ae;
+      --color-divider:         #d8cfc3;
+      --color-text:            #1a1610;
+      --color-text-muted:      #6b5f4e;
+      --color-text-faint:      #a8997e;
+      --color-accent:          #9b6208;
+      --color-accent-hover:    #7a4c05;
+      --color-accent-bright:   #c47e0c;
+      --color-accent-dim:      #f0e2cc;
+      --color-blood:           #7a1515;
+      --color-iron:            #d0c8bc;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.18);
+      --glow-gold: 0 0 12px rgba(155,98,8,0.15);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root:not([data-theme]) {
+        --color-bg:              #f2ede6;
+        --color-surface:         #f8f4ee;
+        --color-surface-2:       #faf7f3;
+        --color-surface-offset:  #ece5db;
+        --color-border:          #ccc0ae;
+        --color-divider:         #d8cfc3;
+        --color-text:            #1a1610;
+        --color-text-muted:      #6b5f4e;
+        --color-text-faint:      #a8997e;
+        --color-accent:          #9b6208;
+        --color-accent-hover:    #7a4c05;
+        --color-accent-bright:   #c47e0c;
+        --color-accent-dim:      #f0e2cc;
+        --color-blood:           #7a1515;
+        --color-iron:            #d0c8bc;
+        --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+        --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+        --shadow-lg: 0 12px 40px rgba(0,0,0,0.18);
+        --glow-gold: 0 0 12px rgba(155,98,8,0.15);
+      }
+    }
+
+    /* ── BASE ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100dvh;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--color-text);
+      background-color: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: var(--space-10) var(--space-4) var(--space-16);
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    img, picture, video, canvas, svg { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; background: none; border: none; font: inherit; color: inherit; }
+
+    :focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 3px;
+      border-radius: var(--radius-sm);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ── BACKGROUND TEXTURE ── */
+    .bg-texture {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(201,133,10,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 50% 110%, rgba(139,26,26,0.06) 0%, transparent 60%);
+    }
+
+    /* Grain texture overlay */
+    .bg-texture::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 200px 200px;
+      opacity: 0.4;
+      mix-blend-mode: overlay;
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-6);
+    }
+
+    /* ── THEME TOGGLE ── */
+    .theme-toggle {
+      position: fixed;
+      top: var(--space-4);
+      right: var(--space-4);
+      z-index: 100;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-full);
+      background: var(--color-surface-offset);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-muted);
+      transition: color var(--transition), background var(--transition), border-color var(--transition);
+    }
+    .theme-toggle:hover {
+      color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+
+    /* ── SVG LOGO ── */
+    .logo-wrap {
+      margin-top: var(--space-4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+    }
+
+    .logo-svg {
+      width: clamp(80px, 25vw, 120px);
+      height: auto;
+      filter: drop-shadow(var(--glow-gold));
+      animation: logoAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    @keyframes logoAppear {
+      from { opacity: 0; transform: translateY(-12px) scale(0.95); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    /* ── ALBUM BADGE ── */
+    .release-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-1) var(--space-3);
+      border: 1px solid var(--color-accent-dim);
+      border-radius: var(--radius-sm);
+      background: color-mix(in oklab, var(--color-accent) 8%, transparent);
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      animation: fadeIn 0.6s 0.2s both;
+    }
+
+    .release-badge .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.7); }
+    }
+
+    /* ── HEADER TEXT ── */
+    .band-name {
+      font-family: var(--font-display);
+      font-size: var(--text-3xl);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-align: center;
+      line-height: 1.1;
+      color: var(--color-text);
+      text-shadow: 0 2px 20px rgba(201,133,10,0.2);
+      animation: fadeIn 0.6s 0.1s both;
+    }
+
+    .band-name span {
+      color: var(--color-accent);
+    }
+
+    .album-title {
+      font-family: var(--font-display);
+      font-size: var(--text-lg);
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-align: center;
+      color: var(--color-text-muted);
+      font-style: italic;
+      animation: fadeIn 0.6s 0.2s both;
+    }
+
+    .tagline {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
+      text-align: center;
+      animation: fadeIn 0.6s 0.3s both;
+    }
+
+    /* ── DIVIDER ── */
+    .rune-divider {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      animation: fadeIn 0.6s 0.3s both;
+    }
+
+    .rune-divider::before,
+    .rune-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(in oklab, transparent, var(--color-border), transparent);
+    }
+
+    .rune-divider svg {
+      flex-shrink: 0;
+      color: var(--color-accent);
+      opacity: 0.7;
+    }
+
+    /* ── LINK BUTTONS ── */
+    .links-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+
+    .section-label {
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
+      padding-left: var(--space-1);
+      margin-top: var(--space-2);
+      margin-bottom: calc(-1 * var(--space-1));
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      width: 100%;
+      padding: var(--space-4) var(--space-5);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition:
+        color var(--transition),
+        background var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition),
+        transform var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .link-btn::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--color-accent);
+      transform: scaleY(0);
+      transform-origin: center;
+      transition: transform var(--transition);
+    }
+
+    .link-btn:hover,
+    .link-btn:focus-visible {
+      background: var(--color-surface-2);
+      border-color: var(--color-accent);
+      color: var(--color-accent-bright);
+      box-shadow: var(--glow-gold), var(--shadow-md);
+      transform: translateX(3px);
+    }
+
+    .link-btn:hover::before,
+    .link-btn:focus-visible::before {
+      transform: scaleY(1);
+    }
+
+    .link-btn:active {
+      transform: translateX(1px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Featured / highlighted button */
+    .link-btn.featured {
+      background: color-mix(in oklab, var(--color-accent) 10%, var(--color-surface));
+      border-color: var(--color-accent-dim);
+      border-width: 1px;
+    }
+
+    .link-btn.featured:hover,
+    .link-btn.featured:focus-visible {
+      background: color-mix(in oklab, var(--color-accent) 18%, var(--color-surface));
+      border-color: var(--color-accent);
+    }
+
+    .btn-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      color: var(--color-accent);
+      transition: color var(--transition), transform var(--transition);
+    }
+
+    .link-btn:hover .btn-icon,
+    .link-btn:focus-visible .btn-icon {
+      color: var(--color-accent-bright);
+      transform: scale(1.1);
+    }
+
+    .btn-text {
+      flex: 1;
+    }
+
+    .btn-label {
+      display: block;
+      font-size: var(--text-base);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .btn-sublabel {
+      display: block;
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      font-weight: 400;
+      margin-top: 2px;
+      transition: color var(--transition);
+    }
+
+    .link-btn:hover .btn-sublabel {
+      color: var(--color-accent);
+    }
+
+    .btn-arrow {
+      flex-shrink: 0;
+      color: var(--color-text-faint);
+      transition: color var(--transition), transform var(--transition);
+    }
+
+    .link-btn:hover .btn-arrow {
+      color: var(--color-accent);
+      transform: translateX(3px);
+    }
+
+    /* Animation stagger */
+    .link-btn { animation: slideUp 0.5s both; }
+    .link-btn:nth-child(1) { animation-delay: 0.35s; }
+    .link-btn:nth-child(2) { animation-delay: 0.42s; }
+    .link-btn:nth-child(3) { animation-delay: 0.49s; }
+    .link-btn:nth-child(4) { animation-delay: 0.56s; }
+    .link-btn:nth-child(5) { animation-delay: 0.63s; }
+    .link-btn:nth-child(6) { animation-delay: 0.70s; }
+    .link-btn:nth-child(7) { animation-delay: 0.77s; }
+    .link-btn:nth-child(8) { animation-delay: 0.84s; }
+    .section-label { animation: fadeIn 0.5s 0.34s both; }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    /* ── TRACKLIST ── */
+    .tracklist {
+      width: 100%;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+      animation: slideUp 0.5s 0.9s both;
+    }
+
+    .tracklist-title {
+      font-family: var(--font-display);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-4);
+    }
+
+    .track-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    .track-item {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-3);
+      padding: var(--space-1) 0;
+      border-bottom: 1px solid var(--color-divider);
+      transition: color var(--transition);
+    }
+
+    .track-item:last-child {
+      border-bottom: none;
+    }
+
+    .track-num {
+      font-family: var(--font-display);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: var(--color-accent);
+      min-width: 1.5rem;
+      text-align: right;
+      opacity: 0.7;
+    }
+
+    .track-name {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--color-text-muted);
+      letter-spacing: 0.02em;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      margin-top: var(--space-4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-2);
+      animation: fadeIn 0.6s 1s both;
+    }
+
+    .footer-label {
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      color: var(--color-text-faint);
+      letter-spacing: 0.1em;
+      text-align: center;
+    }
+
+    .footer a {
+      color: var(--color-text-faint);
+      font-size: var(--text-xs);
+      transition: color var(--transition);
+    }
+
+    .footer a:hover {
+      color: var(--color-accent);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 480px) {
+      body { padding: var(--space-8) var(--space-4) var(--space-12); }
+      .link-btn { padding: var(--space-3) var(--space-4); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background atmospheric glow -->
+  <div class="bg-texture" aria-hidden="true"></div>
+
+  <!-- Theme toggle -->
+  <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+  </button>
+
+  <main class="container">
+
+    <!-- Logo -->
+    <div class="logo-wrap">
+      <!-- SVG Logo: stylized chariot wheel with crossed swords — ancient warfare -->
+      <svg class="logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Chariots Overdrive crest">
+        <!-- Outer ring -->
+        <circle cx="60" cy="60" r="54" stroke="currentColor" stroke-width="2" color="#c9850a" opacity="0.9"/>
+        <!-- Inner ring -->
+        <circle cx="60" cy="60" r="44" stroke="currentColor" stroke-width="1" color="#c9850a" opacity="0.4"/>
+        <!-- Wheel spokes (8 spokes like ancient chariot wheel) -->
+        <g stroke="#c9850a" stroke-width="1.5" opacity="0.6">
+          <line x1="60" y1="16" x2="60" y2="104"/>
+          <line x1="16" y1="60" x2="104" y2="60"/>
+          <line x1="31.5" y1="31.5" x2="88.5" y2="88.5"/>
+          <line x1="88.5" y1="31.5" x2="31.5" y2="88.5"/>
+        </g>
+        <!-- Hub circle -->
+        <circle cx="60" cy="60" r="10" fill="#c9850a" opacity="0.15"/>
+        <circle cx="60" cy="60" r="10" stroke="#c9850a" stroke-width="1.5" opacity="0.8"/>
+        <!-- Center hub dot -->
+        <circle cx="60" cy="60" r="4" fill="#c9850a" opacity="0.9"/>
+        <!-- Crossed lightning bolts (overdrive energy) -->
+        <g stroke="#c9850a" stroke-width="2" stroke-linecap="round" opacity="0.9">
+          <!-- Left sword / lightning -->
+          <path d="M44 38 L52 55 L47 57 L56 82" stroke-linejoin="round"/>
+          <!-- Right sword / lightning -->
+          <path d="M76 38 L68 55 L73 57 L64 82" stroke-linejoin="round"/>
+        </g>
+        <!-- Corner ornaments -->
+        <g fill="#c9850a" opacity="0.5">
+          <polygon points="60,8 62,14 58,14" />
+          <polygon points="60,112 62,106 58,106" />
+          <polygon points="8,60 14,62 14,58" />
+          <polygon points="112,60 106,62 106,58" />
+        </g>
+      </svg>
+
+      <!-- Release badge -->
+      <div class="release-badge">
+        <span class="dot" aria-hidden="true"></span>
+        Out April 3, 2026
+      </div>
+    </div>
+
+    <!-- Band name & album title -->
+    <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);animation:fadeIn 0.6s 0.15s both;">
+      <h1 class="band-name">Chariots <span>Overdrive</span></h1>
+      <p class="album-title">The End of Antiquity</p>
+      <p class="tagline">NWOBHM · USPM · Atlanta, GA · Gates of Hell Records</p>
+    </div>
+
+    <!-- Divider -->
+    <div class="rune-divider" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z"/>
+      </svg>
+    </div>
+
+    <!-- Pre-order / Stream section -->
+    <div class="links-section">
+      <span class="section-label">Pre-Order / Buy</span>
+
+      <a href="https://chariotsoverdrive.bandcamp.com/album/the-end-of-antiquity" target="_blank" rel="noopener noreferrer" class="link-btn featured">
+        <span class="btn-icon" aria-hidden="true">
+          <!-- Bandcamp icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M0 18.75l7.437-13.5H24l-7.438 13.5z"/>
+          </svg>
+        </span>
+        <span class="btn-text">
+          <span class="btn-label">Bandcamp</span>
+          <span class="btn-sublabel">Digital · CD · Black Vinyl</span>
+        </span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="https://mvdshop.com/products/chariots-overdrive-the-end-of-antiquity-cd" target="_blank" rel="noopener noreferrer" class="link-btn">
+        <span class="btn-icon" aria-hidden="true">
+          <!-- Record/CD icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="3"/>
+            <circle cx="12" cy="12" r="1" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="btn-text">
+          <span class="btn-label">MVD Shop</span>
+          <span class="btn-sublabel">Order CD</span>
+        </span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <!-- Stream section -->
+    <div class="links-section">
+      <span class="section-label">Stream</span>
+
+      <a href="https://open.spotify.com/artist/7uBx59vCYmkZJgnvWahru0" target="_blank" rel="noopener noreferrer" class="link-btn">
+        <span class="btn-icon" aria-hidden="true">
+          <!-- Spotify icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+          </svg>
+        </span>
+        <span class="btn-text">
+          <span class="btn-label">Spotify</span>
+          <span class="btn-sublabel">Stream on Spotify</span>
+        </span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="https://music.apple.com/us/artist/chariots-overdrive/1717647182" target="_blank" rel="noopener noreferrer" class="link-btn">
+        <span class="btn-icon" aria-hidden="true">
+          <!-- Apple Music icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a6.303 6.303 0 00-1.73-.65C19.094.05 18.34 0 17.5 0H6.5C5.66 0 4.906.05 4.156.24a6.303 6.303 0 00-1.73.65C1.308 1.624.563 2.624.246 3.934A9.23 9.23 0 000 6.124C0 6.5 0 6.7 0 7.5v9c0 .8 0 1 .006 1.376a9.23 9.23 0 00.24 2.19c.317 1.31 1.062 2.31 2.18 3.043a6.303 6.303 0 001.73.65c.75.19 1.504.24 2.344.24H17.5c.84 0 1.594-.05 2.344-.24a6.303 6.303 0 001.73-.65c1.118-.733 1.863-1.733 2.18-3.043.145-.7.225-1.39.24-2.19.006-.376.006-.576.006-1.376v-9c0-.8 0-1-.006-1.376zM12 17.5a5.5 5.5 0 110-11 5.5 5.5 0 010 11zm6.5-10a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm-6.5 1a3.5 3.5 0 100 7 3.5 3.5 0 000-7z"/>
+          </svg>
+        </span>
+        <span class="btn-text">
+          <span class="btn-label">Apple Music</span>
+          <span class="btn-sublabel">Stream on Apple Music</span>
+        </span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="https://tidal.com/album/498543904" target="_blank" rel="noopener noreferrer" class="link-btn">
+        <span class="btn-icon" aria-hidden="true">
+          <!-- Tidal icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.012 3.992L8.008 7.996 4.004 3.992 0 7.996l4.004 4.004 4.004-4.004 4.004 4.004 4.004-4.004zM8.008 16.004l-4.004-4.004L0 16.004 4.004 20.008l4.004-4.004 4.004 4.004 4.004-4.004-4.004-4.004zM16.016 7.996l-4.004 4.004 4.004 4.004L20.02 12l4.004-4.004-4.004-4.004z"/>
+          </svg>
+        </span>
+        <span class="btn-text">
+          <span class="btn-label">Tidal</span>
+          <span class="btn-sublabel">Stream on Tidal</span>
+        </span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=QyJN--OC1gg" target="_blank" rel="noopener noreferrer" class="link-btn">
+        <span class="btn-icon" aria-hidden="true">
+          <!-- YouTube icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+          </svg>
+        </span>
+        <span class="btn-text">
+          <span class="btn-label">YouTube</span>
+          <span class="btn-sublabel">Watch the title track</span>
+        </span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <!-- Follow section -->
+    <div class="links-section">
+      <span class="section-label">Follow</span>
+
+      <a href="https://www.instagram.com/chariots_overdrive_metal/" target="_blank" rel="noopener noreferrer" class="link-btn">
+        <span class="btn-icon" aria-hidden="true">
+          <!-- Instagram icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </span>
+        <span class="btn-text">
+          <span class="btn-label">Instagram</span>
+          <span class="btn-sublabel">@chariots_overdrive_metal</span>
+        </span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="https://www.facebook.com/chariotsoverdrive/" target="_blank" rel="noopener noreferrer" class="link-btn">
+        <span class="btn-icon" aria-hidden="true">
+          <!-- Facebook icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </span>
+        <span class="btn-text">
+          <span class="btn-label">Facebook</span>
+          <span class="btn-sublabel">Chariots Overdrive</span>
+        </span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <!-- Divider -->
+    <div class="rune-divider" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" opacity="0.6">
+        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z"/>
+      </svg>
+    </div>
+
+    <!-- Tracklist -->
+    <div class="tracklist">
+      <p class="tracklist-title">Tracklist</p>
+      <ol class="track-list" role="list">
+        <li class="track-item"><span class="track-num">I</span><span class="track-name">Where Dust Reigns</span></li>
+        <li class="track-item"><span class="track-num">II</span><span class="track-name">Parasite</span></li>
+        <li class="track-item"><span class="track-num">III</span><span class="track-name">Marching Maniacs</span></li>
+        <li class="track-item"><span class="track-num">IV</span><span class="track-name">A Taikonautic Alchemist</span></li>
+        <li class="track-item"><span class="track-num">V</span><span class="track-name">Sunken Throb</span></li>
+        <li class="track-item"><span class="track-num">VI</span><span class="track-name">Chariots Overdrive</span></li>
+        <li class="track-item"><span class="track-num">VII</span><span class="track-name">Nomadic Warfare</span></li>
+        <li class="track-item"><span class="track-num">VIII</span><span class="track-name">The End of Antiquity</span></li>
+        <li class="track-item"><span class="track-num">IX</span><span class="track-name">A Bizarre Pilgrimage to the Cubik Mansion</span></li>
+      </ol>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-label">Gates of Hell Records · chariotsoverdrive@gmail.com</p>
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+    </footer>
+
+  </main>
+
+  <script>
+    (function(){
+      const t = document.querySelector('[data-theme-toggle]');
+      const r = document.documentElement;
+      let d = r.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
+      r.setAttribute('data-theme', d);
+      function updateIcon(theme) {
+        if (!t) return;
+        t.setAttribute('aria-label', 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' mode');
+        t.innerHTML = theme === 'dark'
+          ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          : '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+      }
+      updateIcon(d);
+      if (t) {
+        t.addEventListener('click', () => {
+          d = d === 'dark' ? 'light' : 'dark';
+          r.setAttribute('data-theme', d);
+          updateIcon(d);
+        });
+      }
+    })();
+  </script>
+
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
